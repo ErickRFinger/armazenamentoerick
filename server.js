@@ -234,3 +234,6 @@ app.post('/api/upload', checkAuth, upload.single('file'), async (req, res) => {
 app.listen(port, () => {
     console.log(`Backend Central rodando em http://localhost:${port}`);
 });
+
+// Exportar para o Vercel Serverless
+module.exports = app;
